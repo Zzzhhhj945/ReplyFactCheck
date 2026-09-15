@@ -62,5 +62,5 @@ LLM 裁判层（`llm_judge.py`）：对每条回复独立裁决（temperature=0�
 
 ## 四、AI 工具使用情况
 
-- **开发过程**：使用 ZCode（DeepSeek 模型）辅助——审查并完善初版方案（`llm生成解决方案.md`，修正分类体系与 ground_truth 不对齐、融合策略含糊、few-shot 测试集泄漏三个问题）、生成规则层/LLM 裁判层/评估代码、撰写评估报告与本 README。
+- **开发过程**：使用 ZCode（DeepSeek 模型）辅助——审查并完善初版解决方案（修正分类体系与 ground_truth 不对齐、融合策略含糊、few-shot 测试集泄漏三个问题）、生成规则层/LLM 裁判层/评估代码、撰写评估报告与本 README。
 - **检测运行时**：本次运行 LLM 裁判层为 **mock 模式**（环境未配置 API key，自动降级），未调用真实大模型 API；检测结果完全由确定性规则层 + mock 裁判产生，可离线复现。配置 API key 后重跑即自动切换为真实 LLM 裁判。
